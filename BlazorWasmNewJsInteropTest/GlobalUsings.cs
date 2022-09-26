@@ -1,0 +1,10 @@
+﻿global using System.Diagnostics.CodeAnalysis;
+global using System.Net.Http.Json;
+global using System.Runtime.InteropServices.JavaScript;
+global using System.Runtime.Versioning;
+global using System.Text.Json.Serialization;
+global using System.Text.Json.Serialization.Metadata;
+global using BlazorWasmNewJsInteropTest;
+global using Microsoft.AspNetCore.Components;
+global using Microsoft.AspNetCore.Components.Web;
+global using Microsoft.AspNetCore.Components.WebAssembly.Hosting;

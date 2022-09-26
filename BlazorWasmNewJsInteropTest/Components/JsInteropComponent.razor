@@ -1,0 +1,6 @@
+﻿<h3>JsInteropComponent</h3>
+
+<button type="button" class="btn btn-secondary" @onclick=GetHRef>@nameof(GetHRef)</button>
+<button type="button" class="btn btn-secondary" @onclick=@(() => ShowAlert("Hello, world!"))>@nameof(ShowAlert)</button>
+
+<p>@href</p>
