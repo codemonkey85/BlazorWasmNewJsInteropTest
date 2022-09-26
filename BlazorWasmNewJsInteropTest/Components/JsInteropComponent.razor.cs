@@ -8,8 +8,13 @@ public partial class JsInteropComponent
     {
         if (OperatingSystem.IsBrowser())
         {
-            await JSHost.ImportAsync("../js/jsinterop.js", "../js/jsinterop.js");
-            await JSHost.ImportAsync("JsInteropComponent.razor.js", "../Components/JsInteropComponent.razor.js");
+            // Call from JS in wwwroot
+            await JSHost.ImportAsync("jsinterop.js", "../js/jsinterop.js");
+
+            // Call from razor-scoped JS
+            await JSHost.ImportAsync(
+                $"{nameof(JsInteropComponent)}.razor.js",
+                $"../{nameof(Components)}/{nameof(JsInteropComponent)}.razor.js");
         }
     }
 
