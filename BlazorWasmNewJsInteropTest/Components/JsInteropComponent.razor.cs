@@ -10,7 +10,6 @@ public partial class JsInteropComponent
         {
             await JSHost.ImportAsync("../js/jsinterop.js", "../js/jsinterop.js");
             await JSHost.ImportAsync("JsInteropComponent.razor.js", "../Components/JsInteropComponent.razor.js");
-            //await JsInterop.OnInit(this);
         }
     }
 
